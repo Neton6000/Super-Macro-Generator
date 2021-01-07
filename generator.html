@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super macro generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            background: #313131;
+            color: #ffffff;
+            font-family: "Roboto", arial, sans-serif;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+        }
+        .buttons,.record {
+            display: inline-block;
+            margin: 16px;
+        }
+        button {
+            background: #3d3d3d;
+            border: 1px solid #696969;
+            text-decoration: none;
+            margin-right: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4b4b4b;
+        }
+        #output {
+            margin: 16px;
+            background: #3d3d3d;
+            border: 1px solid #696969;
+            resize: vertical;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="buttons">
+        <button>Pause</button>
+        <button>Pause</button>
+    </div>
+    <div class="record">
+        <button id="record">Record keystrokes</button>
+        <span id="recStatus">Recording...</span>
+    </div>
+    <textarea id="output" disabled>ds</textarea>
+</body>
+</html>
